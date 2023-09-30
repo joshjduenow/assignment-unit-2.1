@@ -81,6 +81,7 @@ if ( pets < allowedPets )
  else if ( allowedPets < pets ) 
  { console.log ( "Oh no, I have too many pets!" );
 }
+// I am not totally sure I did this right. When I change pet variables, I get errors and then have to change petStatus value //
 
 // STRETCH GOALS:
 
