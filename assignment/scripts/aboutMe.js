@@ -46,12 +46,13 @@ console.log( allowedPets );
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = "Adventures are great!";
-if ( adventurous == true ) { console.log ( result );
+let result;
+if ( adventurous == true ) 
+{ result = "Adventures are great!";
 }
-else {
-  console.log ( "How about we stay at home?" );
+else { result = "How about we stay at home?";
 }
+console.log( result );
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
