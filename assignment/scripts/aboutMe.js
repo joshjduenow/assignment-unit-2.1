@@ -72,18 +72,17 @@ else {
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = "Oh no, I have too many pets!";
+let petStatus;
 if ( pets < allowedPets ) 
-  { console.log ( "I can have more pets" ); 
+  { petStatus = "I can have more pets"; 
 } 
  else if ( pets == allowedPets ) 
- { console.log ( "I have enough pets" );
+ { petStatus = "I have enough pets";
 }
  else if ( allowedPets < pets ) 
- { console.log ( "Oh no, I have too many pets!" );
+ { petStatus = "Oh no, I have too many pets!";
 }
-// I am not totally sure I did this right. When I change pet variables, I get errors and then have to change petStatus value //
-
+console.log( petStatus );
 // STRETCH GOALS:
 
 // 15 - Make a variable called `mostPets` and a conditional that
@@ -91,13 +90,14 @@ if ( pets < allowedPets )
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-let mostPets = 7;
-if ( pets => friendsPets )
-  { console.log ( mostPets );
+let mostPets;
+if ( pets > friendsPets )
+  { mostPets = "I have more pets";
 }
 else 
-  { console.log ( "My friend has the most pets");
+  { mostPets = "My friend has the most pets";
 }
+console.log( mostPets );
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
